@@ -1,0 +1,36 @@
+
+.toDo{
+    display: flex; padding: 10px 15px; background-color: #eee; border-bottom: 1px solid #ddd;
+}
+
+.toDo:nth-child(even) {
+    background-color: #f3f3f3; color: #000; 
+}
+
+.toDo:last-of-type {
+    border-bottom: 0;
+}
+
+.toDo .id {
+    flex: 1 1 50px;
+}
+
+.toDo .content {
+    flex: 1 1 100%;
+}
+
+.toDo.done .content {
+    text-decoration: line-through;
+}
+
+.todo-input {
+    display: block; width: 100%; padding: 10px 15px; appearance: none; border: none; 
+    margin-top: 15px; font-size: 25px; outline: none; background-color: white;
+}
+
+
+.todo-submit {
+    display: block; width: 100%; max-width: 200px; appearance: none; border: none; outline: none;
+    margin: 15px auto; padding: 10px 15px; font-size: 18px; font-weight: 700;
+    background-color: #f02457; color:  white;
+}
