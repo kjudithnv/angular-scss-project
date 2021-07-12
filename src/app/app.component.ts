@@ -11,10 +11,10 @@ export class AppComponent implements OnInit {
 
   toDos:Todo[];
 inputTodo:string = "";
-
+//value to add new to do
     constructor() { }
     ngOnInit(): void {
-  
+ 
       this.toDos = [
         {
           content: 'Get Bread',
@@ -25,7 +25,7 @@ inputTodo:string = "";
           completed: true
         }
       ]
-
+      //to do list array
   }
 
     toggleDone (id) {
@@ -47,6 +47,6 @@ inputTodo:string = "";
       });
 
         this.inputTodo = "";
-    }
+    } // clears input after adding new to do
   }
 
