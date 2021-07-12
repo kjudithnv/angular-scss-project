@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+.toDo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.toDo:nth-child(even) {
+  background-color: #dddbdb;
+  color: #000;
+}
+
+.toDo:last-of-type {
+  border-bottom: 0;
+}
+
+.toDo .id {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50px;
+          flex: 1 1 50px;
+}
+
+.toDo .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.toDo.done .content {
+  text-decoration: line-through;
+}
+
+.mat-form-field-flex {
+  display: block;
+  width: 100%;
+  min-width: 100vw;
+  max-height: 60px;
+  padding: 15px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  outline: none;
+}
+
+.todo-submit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */
